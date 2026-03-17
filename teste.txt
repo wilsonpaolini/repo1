@@ -1,1 +1,89 @@
 teste123
+ATAQUES REAIS EM AWS (RECENTES)
+1. Codefinger Ransomware (2025) – AWS S3
+
+Empresa/Contexto: clientes AWS (múltiplas vítimas)
+
+O que aconteceu: uso de credenciais AWS comprometidas (Access Keys)
+
+Ação: criptografia de buckets S3 e extorsão
+
+Fonte:
+https://www.securityweek.com/compromised-aws-keys-abused-in-codefinger-ransomware-attacks/
+
+2. Campanhas de Cryptojacking (2025) – AWS IAM
+
+Empresa/Contexto: múltiplas empresas AWS
+
+O que aconteceu: uso de credenciais IAM roubadas
+
+Ação: criação de instâncias EC2/ECS para mineração de criptomoeda
+
+Fonte:
+https://www.techradar.com/pro/security/aws-systems-targeted-by-crypto-mining-scam-using-hijacked-iam-credentials
+
+3. Crimson Collective (2025) – AWS
+
+Empresa/Contexto: múltiplas organizações
+
+O que aconteceu: busca de credenciais expostas (ex: GitHub)
+
+Ação:
+
+criação de usuários IAM
+
+escalonamento de privilégio
+
+exfiltração de dados
+
+Fonte:
+https://www.techradar.com/pro/security/red-hat-hackers-crimson-collective-are-now-going-after-aws-instances
+
+4. Angel One (2025) – Setor Financeiro
+
+Empresa: Angel One (corretora indiana)
+
+O que aconteceu: comprometimento do ambiente AWS
+
+Ação: acesso não autorizado e rotação de credenciais
+
+Fonte:
+https://www.reuters.com/business/finance/indias-angel-one-reports-security-breach-says-assessing-impact-2025-02-28/
+
+5. Ataque automatizado (2026) – AWS (DarkReading)
+
+Empresa/Contexto: ambiente AWS não divulgado
+
+O que aconteceu: credenciais expostas em S3 público
+
+Ação:
+
+escalonamento rápido de privilégios
+
+acesso administrativo em minutos
+
+Fonte:
+https://www.darkreading.com/cloud-security/8-minute-access-ai-aws-environment-breach
+
+6. AWS CodeBuild Vulnerability (2026 – Wiz Research)
+
+Empresa/Contexto: clientes AWS CodeBuild
+
+O que aconteceu: exploração de má configuração/vulnerabilidade
+
+Ação:
+
+takeover de builds
+
+risco de supply chain
+
+Fonte:
+https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild
+
+Resumo direto
+
+Principal vetor: credenciais comprometidas + má configuração
+
+Padrão de ataque:
+
+credencial → acesso AWS → enumeração → privilege escalation → exfiltração/impacto
