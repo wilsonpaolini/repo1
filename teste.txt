@@ -87,3 +87,13 @@ Principal vetor: credenciais comprometidas + má configuração
 Padrão de ataque:
 
 credencial → acesso AWS → enumeração → privilege escalation → exfiltração/impacto
+
+-----------------------------
+
+
+Esse documento pode ser usado como base para  threat hunt contínuo de Powershell.
+
+O Powershell tem uma limitação em relação as regras automatizadas de detecção porque ele é executado a todo momento, inclusive os parâmetros suspeitos são executados de forma legítima e isso gera muito falso positivo, uma forma de complementar isso é fazendo esse hunt manual tentando buscar o que sai fora da baseline.
+
+https://www.elastic.co/docs/reference/security/prebuilt-rules/rules/windows/execution_windows_powershell_susp_argshttps://detect.fyi/powershell-threat-hunting-identifying-obfuscation-using-standard-deviation-9b2d9f53697f
+
